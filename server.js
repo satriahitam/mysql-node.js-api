@@ -11,6 +11,8 @@ app.get("/", (req, res) => {
     res.json({ message: "My first using github." });
 });
 
+require("./api/routes/anggota.routes.js")(app);
+
 app.listen(3000, ()=> {
     console.log("server is running on port 3000");
 });
